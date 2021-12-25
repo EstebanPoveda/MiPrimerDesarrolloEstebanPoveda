@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="la">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="generator" content="RSD 5.0.3490">
+	<title>HOME</title>  
+	<link rel="stylesheet" th:href="@{/css/bootstrap/bootstrap.min.css}">
+	<script th:src="@{/js/jquery/jquery-3.6.0.js}"></script>
+	<script th:src="@{/js/bootstrap/bootstrap.min.js}"></script>
+  <link rel="stylesheet" href="src\main\resources\static\css\foundation.min.css">
+  <link rel="stylesheet" href="src\main\resources\static\css\wireframe-theme.min.css">
+  <script>document.createElement( "picture" );</script>
+  <script class="picturefill" async="async" src="js/picturefill.min.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo:400,500,b,i%7CRoboto">
+</head>
+
+<body class="dark-body no-js">
+  <div class="container responsive-menu">
+    <div class="container title-bar" data-responsive-toggle="realeutatemenu"><span class="glyph font-icon-menu button" data-responsive-menu="nav-menu" data-toggle=""><i class="coffeecup-icons-menu7"></i></span></div>
+    <div class="container top-bar" id="realeutatemenu">
+      <div class="container top-bar-left">
+        <ul class="list-container menu dropdown">
+          <li class="list-item-container menuitem">
+            <a class="link-text menu-link" href="index.html">HOME</a>
+          </li>
+          <li class="list-item-container menuitem">
+            <a class="link-text menu-link smooth-scroll" href="index.html#download">DESCARGA</a>
+          </li>
+          <li class="list-item-container menuitem">
+            <a class="link-text menu-link" href="https://solarflare-red-code.netlify.app/">JUEGA AHORA</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container header-region">
+    <div class="container highlighted-heading">
+      <div class="rule">
+        <hr>
+      </div>
+      <h1 class="main-heading" id="book-heading">Solar Flare: Red Code</h1>
+      <div class="rule">
+        <hr>
+      </div>
+      <p class="paragraph intro-highlighted-paragraph">El Código Rojo ha sido activado en el Solar Flare. Deten la catastrofe encarnando a Sybel o Era.&nbsp; </p>
+      <br></br>
+	  <iframe width="560" height="315" src="https://www.youtube.com/embed/wVpfCCjWh6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+  <div class="container book-offer" id="download">
+    <div class="container discount-container">
+      <h5>DESCARGA EL JUEGO EN NW.JS DESKTOP</h5>
+      <h2 class="offer-heading">RED CODE es un juego maquetado en el motor Construct 2 de Scirra y reproducido en la plataforma NW.js para sistemas operativos de escritorio. </h2><a class="link-button appointment-button" href="http://www.mediafire.com/file/vu155t23l9696b3/RED_CODE_win64.exe/file">DESCARGA POR MF</a>
+    </div>
+  </div>
+  <div>
+  		<form class="login-form" th:action="@{/login}" method="post">
+											<div class="form-group">
+												<input class="form-control form-control-user" id="username"
+													aria-describedby="emailHelp" type="text" autocomplete="off"
+													placeholder="root" th:name="username">
+											</div>
+											<div class="form-group">
+												<input type="password" autocomplete="off" placeholder="root"
+													th:name="password" class="form-control form-control-user" id="password">
+											</div>
+											<div class="form-group">
+												<div class="custom-control custom-checkbox small">
+													<input type="checkbox" class="custom-control-input" id="customCheck"
+														th:name="remember">
+													<label class="custom-control-label" for="customCheck">recuerdame</label>
+												</div>
+											</div>
+											<button type="submit" class="btn btn-primary btn-user btn-block"> Login
+											</button>
+		</form>
+  </div>
+  
+  <script src="js/jquery.min.js"></script>
+  <script src="js/outofview.js"></script>
+  <script src="js/what-input.min.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script>$(document).foundation();</script>
+<script>
+$(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+    });
+});
+</script>
+</body>
+
+</html>
